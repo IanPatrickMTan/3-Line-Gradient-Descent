@@ -1,8 +1,6 @@
-# 3-Line-Gradient-Descent
-Probably the shortest gradient descent algorithm ever in existence
+# Single-Line-Gradient-Descent
+Shorter than Koral's gradient descent algorithm, that egotistical moron.
 
 ```py
-def f(x):global y;return eval(y)
-x=float(input('x = '));y=input('y = ')
-for iter in range(100):x-=(f(x+0.001)-f(x))/0.001*0.1;print('\nx =',x,'\ny =',f(x))
+x,y,t=float(input('x = ')),input('y = '),int(input('Iterations: '));exec("for iter in range(t):x-=(eval(y.replace('x', '(x + 0.001)'))-eval(y))/0.001*0.1;print('\\nx =',x,'\\ny =',eval(y))")
   ```
